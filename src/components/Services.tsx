@@ -59,14 +59,14 @@ export default function Services() {
     <section id="services" className="py-32 bg-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
-          <motion.h1
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.2 }}
             className="text-3xl sm:text-5xl font-bold text-dark mb-4 md:mb-0"
           >
             My Services
-          </motion.h1>
+          </motion.h2>
           <motion.a
             href="#contact"
             initial={{ opacity: 0, y: 20 }}
