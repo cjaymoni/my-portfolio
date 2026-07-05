@@ -131,7 +131,7 @@ export default function Skills() {
 
   const slideVariants = {
     enter: (dir: number) => ({
-      x: dir > 0 ? 200 : -200,
+      x: dir > 0 ? 50 : -50,
       opacity: 0,
     }),
     center: {
@@ -139,7 +139,7 @@ export default function Skills() {
       opacity: 1,
     },
     exit: (dir: number) => ({
-      x: dir > 0 ? -200 : 200,
+      x: dir > 0 ? -50 : 50,
       opacity: 0,
     }),
   };
@@ -151,7 +151,7 @@ export default function Skills() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.2 }}
-          className="text-5xl font-bold text-dark mb-16 text-center"
+          className="text-3xl sm:text-5xl font-bold text-dark mb-16 text-center"
         >
           Skills & Experience
         </motion.h1>

@@ -61,7 +61,7 @@ export default function Contact() {
           viewport={{ once: false, amount: 0.2 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl font-bold text-dark mb-4">Get In Touch</h1>
+          <h1 className="text-3xl sm:text-5xl font-bold text-dark mb-4">Get In Touch</h1>
           <p className="text-xl text-dark/70">
             Have a project in mind? Let&apos;s work together!
           </p>

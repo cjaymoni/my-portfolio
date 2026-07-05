@@ -63,7 +63,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.2 }}
-            className="text-5xl font-bold text-dark mb-4 md:mb-0"
+            className="text-3xl sm:text-5xl font-bold text-dark mb-4 md:mb-0"
           >
             My Services
           </motion.h1>

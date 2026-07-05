@@ -56,7 +56,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-5 items-center min-h-[80vh]">
           <div className="py-20 pb-12 lg:py-32">
             <h3 className="text-primary mb-3 font-semibold tracking-wide uppercase text-sm">Hello, I&apos;m</h3>
-            <h1 className="text-6xl md:text-8xl font-bold text-dark mb-4 tracking-tight">Jude <br />Clottey.</h1>
+            <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold text-dark mb-4 tracking-tight">Jude <br />Clottey.</h1>
             <h2 className="text-2xl md:text-3xl text-dark/70 font-light mb-8 h-10">
               <span className="font-medium text-primary">{typedText}</span>
               <span className="animate-pulse text-dark/50">|</span>
