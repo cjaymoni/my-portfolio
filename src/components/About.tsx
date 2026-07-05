@@ -31,8 +31,8 @@ export default function About() {
 
             <p className="text-dark/70 text-lg leading-relaxed">
               Passionate about creating impactful, efficient, and user-friendly
-              digital solutions. I specialize in building modern web applications
-              that solve real-world problems.
+              digital solutions. I specialize in building modern web
+              applications that solve real-world problems.
             </p>
 
             <div className="space-y-4">
@@ -55,13 +55,16 @@ export default function About() {
               ))}
             </div>
 
-            <motion.button
+            <motion.a
+              href="https://drive.google.com/uc?export=download&id=1OnCKSFJ5WS5IFowkMOw1fZeZz7j2jo2L"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition-all hover:scale-105 shadow-lg"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Read More
-            </motion.button>
+            </motion.a>
           </motion.div>
 
           {/* Right Column — Clean stats */}
@@ -77,17 +80,19 @@ export default function About() {
               {/* Warm, sunny gradients */}
               <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -mr-20 -mt-20 transition-transform group-hover:scale-110 duration-700"></div>
               <div className="absolute bottom-0 left-0 w-40 h-40 bg-primary/10 rounded-full blur-2xl -ml-10 -mb-10"></div>
-              
+
               <div className="relative z-10">
                 <div className="w-12 h-12 bg-white rounded-lg shadow-sm flex items-center justify-center mb-6 border border-gray-100">
                   <span className="text-xl font-bold text-primary">JC</span>
                 </div>
                 <h4 className="text-2xl font-bold text-dark leading-snug">
                   Building scalable <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">digital ecosystems</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+                    digital ecosystems
+                  </span>
                 </h4>
               </div>
-              
+
               <div className="relative z-10 flex gap-3 mt-8">
                 <div className="h-1.5 w-12 bg-primary rounded-full"></div>
                 <div className="h-1.5 w-4 bg-gray-200 rounded-full"></div>

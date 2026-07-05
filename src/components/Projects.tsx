@@ -98,40 +98,36 @@ export default function Projects() {
               transition={{ delay: index * 0.1 }}
               className="group relative overflow-hidden rounded-xl shadow-lg"
             >
-              <div className="aspect-square relative overflow-hidden">
+              <div
+                className="aspect-square relative overflow-hidden cursor-pointer"
+                onClick={() => setPreview(project)}
+              >
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
                   className="object-cover"
                 />
-                {/* Overlay */}
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: 1 }}
-                  className="absolute inset-0 bg-primary/90 flex items-end p-6"
-                >
+                {/* Overlay - visible on hover (desktop) */}
+                <div className="absolute inset-0 bg-primary/90 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="flex gap-4 w-full">
-                    <motion.button
-                      onClick={() => setPreview(project)}
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
-                      className="flex-1 bg-white text-primary p-3 rounded-lg flex items-center justify-center"
+                    <button
+                      onClick={(e) => { e.stopPropagation(); setPreview(project); }}
+                      className="flex-1 bg-white text-primary p-3 rounded-lg flex items-center justify-center active:scale-95 transition-transform"
                     >
                       <Eye size={20} />
-                    </motion.button>
-                    <motion.a
+                    </button>
+                    <a
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
-                      className="flex-1 bg-white text-primary p-3 rounded-lg flex items-center justify-center"
+                      onClick={(e) => e.stopPropagation()}
+                      className="flex-1 bg-white text-primary p-3 rounded-lg flex items-center justify-center active:scale-95 transition-transform"
                     >
                       <ExternalLink size={20} />
-                    </motion.a>
+                    </a>
                   </div>
-                </motion.div>
+                </div>
               </div>
               <div className="p-4 bg-white">
                 <h3 className="font-semibold text-dark">{project.title}</h3>
@@ -182,7 +178,7 @@ export default function Projects() {
                     href={preview.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-primary font-medium hover:underline text-sm"
+                    className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg font-medium text-sm hover:bg-primary/90 transition-all"
                   >
                     Visit site <ExternalLink size={16} />
                   </a>

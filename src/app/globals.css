@@ -43,4 +43,8 @@
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
   }
+
+  button, a, [role="button"] {
+    cursor: pointer;
+  }
 }
